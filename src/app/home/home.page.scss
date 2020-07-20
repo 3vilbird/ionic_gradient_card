@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
 #container {
   text-align: center;
 
@@ -24,4 +26,112 @@
 
 #container a {
   text-decoration: none;
+}
+// FIXME: comment this to remove bcg
+ion-content {
+  --background: linear-gradient(
+    -189deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    160deg,
+    rgba(127, 183, 255, 1) 0%,
+    rgba(127, 183, 255, 1) 50%,
+    rgba(117, 50, 218, 1) 100%
+  );
+}
+
+//
+ion-card {
+  margin-top: 40px;
+  border-radius: 20px;
+  text-align: left;
+  --color: #fff;
+
+  ion-card-content {
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      //FIXME: uncomment below lines to switch theame
+      // color: rgba(117,50,218,1);
+    }
+    p {
+      // color: rgba(117,50,218,1);
+    }
+    ion-button {
+      --color: #222;
+      --box-shadow: none;
+    }
+  }
+}
+.card1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    160deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --background: linear-gradient(
+    160deg,
+    rgba(127, 183, 255, 1) 0%,
+    rgba(127, 183, 255, 1) 50%,
+    rgba(117, 50, 218, 1) 100%
+  );
+  ion-button {
+    --background: linear-gradient(
+      90deg,
+      rgba(127, 183, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+
+.card2 {
+  // background: rgb(2, 0, 36);
+  // FIXME: unblock below to switch theame
+
+  background: linear-gradient(
+    45deg,
+    rgba(39, 87, 204, 1) 0%,
+    rgba(99, 170, 219, 1) 50%,
+    rgba(153, 203, 237, 1) 100%
+  );
+  ion-button {
+    --background: linear-gradient(
+      90deg,
+      rgba(127, 183, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+}
+
+  // ============== sec theme==============
+  // background: linear-gradient(
+  //   -10deg,
+  //   rgba(117, 50, 218, 1) 0%,
+  //   rgba(255, 255, 255, 1) 40%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+
+  // ion-button {
+  //   --background: linear-gradient(
+  //     90deg,
+  //     rgba(117, 50, 218, 0.6) 0%,
+  //     rgba(117, 50, 218, 0.8) 40%,
+  //     rgba(255, 255, 255, 1) 100%
+  //   );
+  // }
+}
+
+ion-card,
+ion-button,
+ion-title {
+  font-family: Staatliches;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }

@@ -9,12 +9,52 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Card ui design and otp reader</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- TODO: just uncomment ot work with otp reader -->
+  <!-- <div id="container">
+    <ion-button (click)="retriveSMS()">
+      Read OTP from SMS
+    </ion-button>
+
+    <ion-button (click)="genHash()">
+      Gen Hash
+    </ion-button>
+  </div> -->
+  <ion-slides pager="false">
+    <ion-slide>
+      <ion-card class="ion-padding card1">
+        <ion-card-content>
+          <h2>helooo</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium minima tempore minus molestias, quos iste neque iusto
+            officiis mollitia odio nam eligendi esse, quam magni cum ducimus
+            voluptatum placeat excepturi!
+          </p>
+          <br />
+          <ion-button shape="round" expand="block " (click)="showphoto()"
+            >Continue</ion-button
+          >
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="ion-padding card2">
+        <ion-card-content>
+          <h2>helooo</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium minima tempore minus molestias, quos iste neque iusto
+            officiis mollitia odio nam eligendi esse, quam magni cum ducimus
+            voluptatum placeat excepturi!
+          </p>
+          <br />
+          <ion-button shape="round" expand="block ">Continue</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
